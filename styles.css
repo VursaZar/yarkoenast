@@ -2816,7 +2816,7 @@ a {
   .interview,
   .final-block,
   .site-footer {
-    width: calc(100% - 24px);
+    width: calc(100vw - 24px);
     max-width: none;
   }
 
@@ -2844,5 +2844,458 @@ a {
 
   .contacts h2 {
     font-size: 17px;
+  }
+}
+
+/* Professional visual polish */
+:root {
+  --surface: #fbfaff;
+  --surface-warm: #fff8ea;
+  --shadow-soft: 0 18px 45px rgba(39, 31, 86, 0.08);
+  --shadow-card: 0 12px 30px rgba(39, 31, 86, 0.1);
+}
+
+body {
+  background:
+    linear-gradient(180deg, #fff 0, #fff 820px, #fbfaff 821px, #fff 100%);
+  line-height: 1.35;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+}
+
+.site-header {
+  position: sticky;
+  top: 16px;
+  z-index: 20;
+  width: min(1760px, calc(100% - 72px));
+  margin-top: 24px;
+  padding: 14px 18px;
+  border: 1px solid rgba(216, 208, 255, 0.62);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 18px 42px rgba(53, 40, 141, 0.08);
+  backdrop-filter: blur(14px);
+}
+
+.brand {
+  width: min(330px, 24vw);
+}
+
+.nav-link {
+  position: relative;
+  padding: 10px 4px;
+  border-radius: 8px;
+  transition: color 160ms ease, background 160ms ease;
+}
+
+.nav-link:hover {
+  background: rgba(216, 208, 255, 0.42);
+}
+
+.nav-link.active {
+  padding: 10px 12px;
+}
+
+.header-button,
+.primary-button {
+  box-shadow: 0 12px 26px rgba(77, 57, 184, 0.22);
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.header-button:hover,
+.primary-button:hover {
+  background: var(--purple-dark);
+  box-shadow: 0 16px 34px rgba(77, 57, 184, 0.28);
+  transform: translateY(-1px);
+}
+
+.hero {
+  align-items: center;
+  min-height: 620px;
+  margin-top: 18px;
+}
+
+.hero h1 {
+  letter-spacing: 0;
+}
+
+.hero-text,
+.about-panel p,
+.info-card p,
+.info-card li,
+.forms-text p,
+.stage-card li,
+.risk-copy p,
+.myth-card p,
+.alzrus-card p,
+.fund-note p,
+.school-card p,
+.care-intro p,
+.care-rule ul,
+.care-bottom li,
+.book-notes p,
+.podcast p,
+.education p,
+.interview-qa .answer,
+.contact-grid p {
+  line-height: 1.32;
+}
+
+.hero-placeholder {
+  height: 600px;
+}
+
+.hero-media {
+  min-height: 600px;
+}
+
+.hero-people {
+  height: min(590px, 100%);
+}
+
+.service-grid {
+  gap: clamp(24px, 3vw, 54px);
+  margin-top: 20px;
+  margin-bottom: 112px;
+}
+
+.service-card {
+  min-height: 250px;
+  border-color: rgba(53, 40, 141, 0.14);
+  border-radius: 16px;
+  box-shadow: var(--shadow-card);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.service-card:hover {
+  border-color: rgba(77, 57, 184, 0.32);
+  box-shadow: 0 18px 45px rgba(39, 31, 86, 0.14);
+  transform: translateY(-4px);
+}
+
+.service-icon {
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(216, 208, 255, 0.28);
+}
+
+.service-card h2 {
+  font-weight: 600;
+}
+
+.about,
+.forms,
+.risk,
+.myths,
+.funds,
+.care,
+.resources,
+.interview,
+.final-block {
+  scroll-margin-top: 120px;
+}
+
+.about-panel,
+.info-card,
+.forms-panel,
+.alzrus-card,
+.school-card,
+.risk-list-left,
+.risk-list-right,
+.care-tip-purple {
+  box-shadow: var(--shadow-soft);
+}
+
+.about-panel {
+  border-radius: 24px;
+}
+
+.about-panel h2,
+.info-card h3,
+.forms-title-main h2,
+.forms-title-stage h2,
+.myths-center h2 {
+  text-shadow: none;
+}
+
+.info-grid {
+  align-items: stretch;
+}
+
+.info-card {
+  border-radius: 18px;
+}
+
+.forms-card,
+.forms-panel,
+.stages,
+.risk-list-left,
+.risk-list-right,
+.myth-card,
+.fund-note > div,
+.care-rule ul,
+.care-bottom,
+.book-notes article,
+.podcast,
+.interview-qa {
+  border-radius: 18px;
+}
+
+.forms-card {
+  box-shadow: var(--shadow-card);
+}
+
+.stages,
+.myth-card,
+.school-card,
+.book-notes article {
+  background: var(--surface-warm);
+}
+
+.risk-bottom {
+  min-height: 560px;
+}
+
+.risk-list-left,
+.risk-list-right {
+  padding: 22px 24px 22px 54px;
+  border: 1px solid rgba(157, 141, 227, 0.22);
+  background: #fff;
+}
+
+.risk-list-right {
+  padding-left: 34px;
+}
+
+.myths-grid {
+  gap: 28px clamp(28px, 3vw, 54px);
+}
+
+.myth-card {
+  min-height: auto;
+  padding: 30px 26px;
+  border: 1px solid rgba(53, 40, 141, 0.08);
+}
+
+.myth-card h3 {
+  text-align: left;
+}
+
+.fund-note > div,
+.book-notes article,
+.interview-qa,
+.care-bottom {
+  background: #fff;
+}
+
+.contacts h2,
+.social-title,
+.footer-note {
+  border-radius: 14px;
+}
+
+.site-footer {
+  box-shadow: 0 -18px 42px rgba(39, 31, 86, 0.1);
+}
+
+@media (max-width: 1180px) {
+  .site-header {
+    width: min(980px, calc(100% - 40px));
+  }
+
+  .brand {
+    width: min(320px, 48vw);
+  }
+
+  .hero {
+    align-items: start;
+    min-height: auto;
+  }
+
+  .hero-placeholder,
+  .hero-media {
+    height: auto;
+    min-height: 420px;
+  }
+}
+
+@media (max-width: 760px) {
+  body {
+    background: #fff;
+  }
+
+  .site-header {
+    position: static;
+    width: calc(100vw - 28px);
+    max-width: calc(100vw - 28px);
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+
+  .brand {
+    width: min(310px, 86vw);
+  }
+
+  .header-button {
+    width: 100%;
+    max-width: none;
+    border-radius: 10px;
+  }
+
+  .nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    width: calc(100vw - 28px);
+    max-width: calc(100vw - 28px);
+    justify-content: stretch;
+    padding-bottom: 4px;
+    overflow: visible;
+  }
+
+  .nav-link {
+    padding: 10px 8px;
+    background: #fff;
+    box-shadow: 0 8px 18px rgba(39, 31, 86, 0.05);
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .hero {
+    margin-top: 14px;
+    min-height: auto;
+  }
+
+  .hero-copy,
+  .hero-actions {
+    max-width: 310px;
+  }
+
+  .hero h1 {
+    max-width: 310px;
+    font-size: 26px;
+  }
+
+  .hero-text {
+    max-width: 310px;
+  }
+
+  .hero-placeholder {
+    height: 220px;
+  }
+
+  .hero-media {
+    min-height: 220px;
+    margin-top: -18px;
+  }
+
+  .hero-people {
+    top: 0;
+    right: -12%;
+    bottom: auto;
+    height: 230px;
+  }
+
+  .scribble {
+    display: none;
+  }
+
+  .service-card {
+    min-height: 0;
+    box-shadow: 0 10px 24px rgba(39, 31, 86, 0.09);
+  }
+
+  .service-grid {
+    margin-top: -92px;
+  }
+
+  .service-icon {
+    padding: 10px;
+    border-radius: 14px;
+  }
+
+  .about-hero {
+    display: block;
+    padding-top: 0;
+  }
+
+  .about-brain {
+    position: static;
+    display: block;
+    width: min(190px, 58vw);
+    margin: 0 auto -12px;
+    opacity: 0.9;
+    transform: none;
+  }
+
+  .about-panel {
+    position: relative;
+    z-index: 1;
+  }
+
+  .forms-card,
+  .forms-panel,
+  .stages,
+  .myth-card,
+  .alzrus-card,
+  .school-card,
+  .fund-note > div,
+  .care-tip,
+  .care-rule ul,
+  .care-bottom,
+  .book-notes article,
+  .podcast,
+  .interview-qa {
+    box-shadow: 0 10px 24px rgba(39, 31, 86, 0.08);
+  }
+
+  .risk-list-left,
+  .risk-list-right {
+    padding: 18px 18px 18px 38px;
+  }
+
+  .myths-center img {
+    margin-bottom: -8px;
+  }
+
+  .clock-logo div {
+    font-size: 13px;
+  }
+
+  .book-covers {
+    grid-template-columns: repeat(3, minmax(84px, 1fr));
+  }
+
+  .book-covers img {
+    max-height: 220px;
+  }
+
+  .site-footer {
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .hero-text {
+    max-width: 300px;
+  }
+
+  .book-covers {
+    grid-template-columns: 1fr;
+  }
+
+  .book-covers img {
+    max-height: 300px;
   }
 }
