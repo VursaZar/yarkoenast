@@ -2016,3 +2016,833 @@ a {
     padding: 28px 22px;
   }
 }
+
+@media (max-width: 760px) {
+  html {
+    scroll-padding-top: 16px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .site-header,
+  .hero,
+  .service-grid,
+  .about,
+  .forms,
+  .risk,
+  .myths,
+  .funds,
+  .care,
+  .resources,
+  .interview,
+  .final-block,
+  .site-footer {
+    width: calc(100vw - 56px);
+    max-width: 560px;
+  }
+
+  .hero-copy,
+  .about-panel,
+  .info-card,
+  .forms-text,
+  .risk-copy,
+  .myth-card,
+  .alzrus-card,
+  .fund-note,
+  .school-card,
+  .care-intro,
+  .care-rule,
+  .care-bottom,
+  .book-notes article,
+  .podcast,
+  .profile-card,
+  .interview-qa,
+  .final-brand,
+  .contacts {
+    min-width: 0;
+  }
+
+  .hero h1,
+  .about-panel h2,
+  .info-card h3,
+  .forms-title-main h2,
+  .forms-title-stage h2,
+  .risk-copy h2,
+  .myth-card h3,
+  .care-intro h2,
+  .books-row h2,
+  .podcast-title,
+  .reason-title,
+  .interview-profile h2,
+  .final-brand h2,
+  .contacts h2 {
+    overflow-wrap: anywhere;
+  }
+
+  .site-header {
+    margin-top: 18px;
+    gap: 14px;
+  }
+
+  .brand {
+    justify-self: center;
+    width: min(300px, 86vw);
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-inline: -2px;
+    padding: 4px 2px 8px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-link {
+    flex: 0 0 auto;
+    padding: 10px 12px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: #fff;
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  .nav-link.active {
+    padding: 10px 12px;
+    border-color: var(--purple-soft);
+  }
+
+  .header-button,
+  .primary-button {
+    max-width: 310px;
+    min-height: 48px;
+    padding: 0 18px;
+    font-size: 15px;
+    justify-self: center;
+  }
+
+  .header-button {
+    justify-self: start;
+  }
+
+  .hero {
+    gap: 18px;
+    margin-top: 18px;
+    padding-top: 10px;
+  }
+
+  .hero h1 {
+    max-width: 310px;
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 1.14;
+  }
+
+  .hero-kicker {
+    font-size: 20px;
+  }
+
+  .hero-text {
+    max-width: 310px;
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .hero-actions {
+    gap: 12px;
+    margin-top: 18px;
+    max-width: 310px;
+  }
+
+  .text-link {
+    min-height: 44px;
+    font-size: 16px;
+  }
+
+  .hero-media {
+    min-height: 250px;
+  }
+
+  .hero-placeholder {
+    height: 250px;
+  }
+
+  .scribble {
+    top: -20px;
+    left: 18%;
+    width: 120px;
+  }
+
+  .hero-people {
+    right: -10%;
+    width: 118%;
+    max-height: 250px;
+  }
+
+  .service-grid {
+    gap: 14px;
+    margin: 24px auto 58px;
+  }
+
+  .service-card {
+    grid-template-columns: 58px minmax(0, 1fr);
+    min-height: auto;
+    place-items: stretch;
+    align-items: center;
+    padding: 18px;
+    border-radius: 14px;
+    text-align: left;
+  }
+
+  .service-icon {
+    width: 54px;
+    height: 54px;
+  }
+
+  .service-card h2 {
+    margin: 0;
+    font-size: 19px;
+    line-height: 1.18;
+  }
+
+  .about,
+  .forms,
+  .risk,
+  .myths,
+  .funds,
+  .care,
+  .resources,
+  .interview,
+  .final-block {
+    margin-bottom: 64px;
+  }
+
+  .about-hero {
+    padding-top: 128px;
+  }
+
+  .about-brain {
+    left: 50%;
+    top: 0;
+    width: 190px;
+    transform: translateX(-50%);
+    transform-origin: center top;
+  }
+
+  .about-panel,
+  .info-card,
+  .forms-panel,
+  .myth-card,
+  .interview-qa,
+  .care-bottom,
+  .fund-note > div {
+    border-radius: 18px;
+  }
+
+  .about-panel,
+  .info-card {
+    padding: 22px 18px;
+  }
+
+  .about-panel h2,
+  .info-card h3 {
+    font-size: 24px;
+    line-height: 1.1;
+  }
+
+  .about-panel p,
+  .info-card p,
+  .info-card li {
+    font-size: 16px;
+    line-height: 1.42;
+  }
+
+  .info-grid {
+    gap: 14px;
+    margin-top: 20px;
+  }
+
+  .puzzle-group {
+    height: 96px;
+  }
+
+  .forms {
+    padding-top: 8px;
+  }
+
+  .forms-top {
+    gap: 18px;
+  }
+
+  .forms-collage {
+    gap: 12px;
+  }
+
+  .forms-card {
+    min-height: 145px;
+    border-radius: 18px;
+  }
+
+  .forms-card-light img {
+    width: min(160px, 70%);
+  }
+
+  .forms-title-main h2,
+  .forms-title-stage h2 {
+    font-size: 25px;
+    line-height: 1.16;
+  }
+
+  .forms-panel {
+    min-height: auto;
+  }
+
+  .forms-brains {
+    min-height: 150px;
+  }
+
+  .forms-brains img {
+    width: min(118px, 42%);
+  }
+
+  .forms-text {
+    padding: 20px 18px;
+  }
+
+  .forms-text article + article {
+    margin-top: 18px;
+  }
+
+  .forms-text h3,
+  .stage-card h3 {
+    font-size: 19px;
+    line-height: 1.18;
+  }
+
+  .forms-text p,
+  .stage-card li {
+    font-size: 16px;
+    line-height: 1.38;
+  }
+
+  .stages {
+    gap: 18px;
+    margin-top: 18px;
+    padding: 20px 18px;
+    border-radius: 18px;
+  }
+
+  .risk {
+    padding-top: 8px;
+  }
+
+  .risk-top {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .risk-bubbles {
+    width: 100%;
+    max-width: 100%;
+    justify-self: center;
+  }
+
+  .risk-copy {
+    padding-top: 0;
+  }
+
+  .risk-copy h2 {
+    margin-bottom: 12px;
+    font-size: 28px;
+  }
+
+  .risk-copy p {
+    font-size: 16px;
+    line-height: 1.42;
+  }
+
+  .risk-copy .risk-note {
+    margin-top: 14px;
+    font-size: 15px;
+    line-height: 1.25;
+  }
+
+  .risk-bottom {
+    display: grid;
+    gap: 16px;
+    margin-top: 22px;
+  }
+
+  .risk-list-left,
+  .risk-list-right,
+  .risk-people {
+    position: static;
+    width: auto;
+    transform: none;
+  }
+
+  .risk-list-left,
+  .risk-list-right {
+    padding: 18px 18px 18px 38px;
+    border-radius: 18px;
+    background: #fff6e4;
+    box-shadow: 3px 3px 0 rgba(42, 38, 54, 0.1);
+    font-size: 16px;
+    line-height: 1.42;
+  }
+
+  .risk-list-left::before {
+    left: 18px;
+    top: 18px;
+    height: calc(100% - 36px);
+    width: 5px;
+  }
+
+  .risk-list ul {
+    padding-left: 18px;
+  }
+
+  .risk-people {
+    width: 100%;
+    max-width: 430px;
+    justify-self: center;
+  }
+
+  .myths {
+    padding-top: 8px;
+  }
+
+  .myths-grid {
+    gap: 16px;
+  }
+
+  .myths-center {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .myths-center img {
+    width: min(300px, 86%);
+  }
+
+  .myths-center h2 {
+    width: 100%;
+    margin-top: 0;
+    padding: 14px 18px;
+    border-radius: 18px;
+    font-size: 30px;
+  }
+
+  .myth-card {
+    padding: 22px 18px;
+  }
+
+  .myth-card h3 {
+    margin-bottom: 14px;
+    font-size: 18px;
+    line-height: 1.18;
+    text-align: left;
+  }
+
+  .myth-card p {
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .funds {
+    padding-top: 8px;
+  }
+
+  .funds-grid {
+    gap: 18px;
+  }
+
+  .alzrus h2,
+  .school-card h3 {
+    margin-left: 0;
+    border-radius: 10px 10px 0 0;
+    font-size: 20px;
+  }
+
+  .alzrus-card,
+  .school-card,
+  .fund-note > div {
+    border-radius: 0 18px 18px 18px;
+  }
+
+  .alzrus-card p,
+  .school-card p,
+  .fund-note p {
+    font-size: 15px;
+    line-height: 1.42;
+  }
+
+  .fund-note h3 {
+    margin-left: 0;
+    font-size: 18px;
+  }
+
+  .funds-title {
+    display: flex;
+    min-height: auto;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+  }
+
+  .word {
+    display: block;
+    grid-column: auto;
+    grid-row: auto;
+    align-self: auto;
+    padding-left: 0;
+    font-size: 40px;
+    line-height: 1;
+  }
+
+  .clock-logo {
+    grid-template-columns: 86px minmax(0, 1fr);
+    justify-self: stretch;
+    width: 100%;
+    min-height: auto;
+  }
+
+  .clock-logo img {
+    position: relative;
+    z-index: 1;
+    width: 112px;
+    transform: none;
+  }
+
+  .clock-logo div {
+    min-height: auto;
+    margin-left: -28px;
+    padding: 18px 14px 18px 40px;
+    border-radius: 0 18px 18px 0;
+    font-size: 12px;
+    line-height: 1.25;
+  }
+
+  .school-card {
+    padding: 0 18px 18px;
+  }
+
+  .school-card h3 {
+    transform: translateY(-10px);
+  }
+
+  .care {
+    padding-top: 8px;
+  }
+
+  .care-main {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .care-intro,
+  .care-people,
+  .care-tip,
+  .care-side,
+  .care-bottom {
+    grid-column: auto;
+    grid-row: auto;
+    width: 100%;
+  }
+
+  .care-intro {
+    padding-top: 0;
+  }
+
+  .care-intro h2 {
+    margin-bottom: 14px;
+    font-size: 28px;
+    line-height: 1.12;
+  }
+
+  .care-intro p {
+    width: auto;
+    font-size: 16px;
+    line-height: 1.42;
+  }
+
+  .care-people {
+    width: min(100%, 430px);
+  }
+
+  .care-tip {
+    min-height: auto;
+    border-radius: 18px;
+    font-size: 16px;
+    line-height: 1.38;
+  }
+
+  .care-side {
+    padding-top: 0;
+  }
+
+  .care-rule {
+    margin-bottom: 18px;
+  }
+
+  .care-rule:last-child {
+    margin-bottom: 0;
+  }
+
+  .care-rule h3,
+  .care-yes h3 {
+    min-width: 0;
+    margin: 0;
+    border-radius: 12px 12px 0 0;
+    font-size: 24px;
+  }
+
+  .care-rule ul {
+    padding: 20px 18px 20px 34px;
+    border-radius: 0 0 18px 18px;
+    font-size: 15px;
+    line-height: 1.42;
+  }
+
+  .care-bottom li {
+    font-size: 15px;
+    line-height: 1.42;
+  }
+
+  .resources {
+    padding-top: 8px;
+  }
+
+  .book-notes {
+    gap: 14px;
+  }
+
+  .book-notes article {
+    min-height: auto;
+    padding: 20px 18px;
+    border-radius: 18px;
+  }
+
+  .book-notes p,
+  .podcast p {
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .books-row {
+    gap: 22px;
+    margin-top: 24px;
+  }
+
+  .books-row h2,
+  .podcast-title,
+  .reason-title {
+    font-size: 32px;
+    line-height: 1.08;
+  }
+
+  .book-covers {
+    gap: 18px;
+  }
+
+  .book-covers img {
+    max-height: 310px;
+    justify-self: center;
+  }
+
+  .podcast-main,
+  .podcast-second {
+    gap: 14px;
+    border-radius: 18px;
+    padding: 18px;
+  }
+
+  .podcast img {
+    max-width: 260px;
+    justify-self: center;
+  }
+
+  .podcast-title,
+  .reason-title {
+    margin-top: 26px;
+  }
+
+  .interview {
+    gap: 22px;
+    padding-top: 8px;
+  }
+
+  .interview-profile h2 {
+    font-size: 32px;
+    line-height: 1.08;
+  }
+
+  .profile-card {
+    padding-left: 20px;
+    border-left-width: 6px;
+  }
+
+  .profile-card h3 {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .profile-top {
+    gap: 16px;
+  }
+
+  .profile-top img {
+    justify-self: center;
+    width: min(220px, 72vw);
+  }
+
+  .profile-name {
+    gap: 14px;
+    padding-top: 0;
+  }
+
+  .education {
+    margin-top: 28px;
+  }
+
+  .education p,
+  .interview-qa h3,
+  .interview-qa .answer {
+    font-size: 15px;
+    line-height: 1.42;
+  }
+
+  .interview-qa {
+    padding: 20px 18px;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .final-block {
+    padding-top: 8px;
+  }
+
+  .final-brand img {
+    width: min(150px, 42%);
+    margin-bottom: 28px;
+  }
+
+  .final-brand h2 {
+    margin-bottom: 16px;
+    font-size: 28px;
+    line-height: 1.16;
+  }
+
+  .final-brand .final-kicker,
+  .final-brand p {
+    font-size: 16px;
+    line-height: 1.42;
+  }
+
+  .site-footer {
+    gap: 22px;
+    margin: 0 auto;
+    padding: 20px 16px 24px;
+    border-radius: 22px 22px 0 0;
+  }
+
+  .social-title,
+  .contacts h2 {
+    min-height: 56px;
+    justify-content: flex-start;
+    border-radius: 12px;
+    padding: 0 14px;
+  }
+
+  .telegram-dot {
+    width: 42px;
+    font-size: 22px;
+  }
+
+  .social-title strong,
+  .contacts h2 {
+    font-size: 19px;
+    line-height: 1.15;
+  }
+
+  .contacts h2 {
+    gap: 10px;
+    text-align: left;
+  }
+
+  .contacts h2 span {
+    font-size: 28px;
+  }
+
+  .qr-card {
+    width: min(210px, 76%);
+    margin-top: 58px;
+  }
+
+  .contact-grid {
+    gap: 14px;
+  }
+
+  .contact-grid p {
+    font-size: 15px;
+    line-height: 1.35;
+  }
+
+  .footer-note {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.35;
+  }
+}
+
+@media (max-width: 420px) {
+  .site-header,
+  .hero,
+  .service-grid,
+  .about,
+  .forms,
+  .risk,
+  .myths,
+  .funds,
+  .care,
+  .resources,
+  .interview,
+  .final-block,
+  .site-footer {
+    width: calc(100% - 24px);
+    max-width: none;
+  }
+
+  .hero h1,
+  .care-intro h2,
+  .final-brand h2 {
+    font-size: 25px;
+  }
+
+  .books-row h2,
+  .podcast-title,
+  .reason-title,
+  .interview-profile h2 {
+    font-size: 28px;
+  }
+
+  .nav-link {
+    padding: 9px 10px;
+    font-size: 13px;
+  }
+
+  .word {
+    font-size: 34px;
+  }
+
+  .contacts h2 {
+    font-size: 17px;
+  }
+}
