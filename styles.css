@@ -3409,15 +3409,15 @@ img {
 }
 
 .contact-grid {
-  grid-template-columns: repeat(3, minmax(260px, 1fr));
-  gap: 26px 34px;
+  grid-template-columns: repeat(4, minmax(190px, 1fr));
+  gap: 26px 30px;
   padding-right: 0;
 }
 
 .contact-grid p {
   min-width: 0;
   color: rgba(255, 255, 255, 0.9);
-  font-size: clamp(18px, 1.1vw, 22px);
+  font-size: clamp(16px, 0.95vw, 21px);
   line-height: 1.16;
   overflow-wrap: anywhere;
   white-space: nowrap;
