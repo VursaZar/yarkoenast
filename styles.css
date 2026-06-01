@@ -829,14 +829,12 @@ a {
   font-weight: 600;
 }
 
-.profile-name span::before {
-  content: "";
-  width: 18px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background:
-    linear-gradient(135deg, transparent 46%, #fff 47% 53%, transparent 54%) 4px 4px / 10px 10px no-repeat,
-    #17a7e8;
+.profile-name span img {
+  display: block;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  border-radius: 0;
 }
 
 .education {
@@ -1562,14 +1560,14 @@ a {
   display: grid;
   grid-template-columns: minmax(440px, 0.72fr) minmax(610px, 1.2fr);
   gap: 34px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .forms-collage {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  min-height: 460px;
+  min-height: 600px;
 }
 
 .forms-card {
