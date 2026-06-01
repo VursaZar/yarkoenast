@@ -3299,3 +3299,212 @@ img {
     max-height: 300px;
   }
 }
+
+/* Footer reference layout */
+.site-footer {
+  grid-template-columns: minmax(250px, 0.22fr) minmax(0, 1fr);
+  gap: 28px;
+  width: min(1840px, calc(100% - 40px));
+  margin-bottom: 0;
+  padding: 28px 36px 30px;
+  border-radius: 30px 30px 0 0;
+  background: #563fc0;
+  box-shadow: 0 -16px 42px rgba(39, 31, 86, 0.1);
+}
+
+.social {
+  display: grid;
+  align-content: start;
+  justify-items: center;
+}
+
+.social-title {
+  min-height: 72px;
+  justify-content: flex-start;
+  gap: 14px;
+  width: 100%;
+  padding: 8px 14px;
+  border-radius: 12px;
+  background: #fff;
+  color: #715bd5;
+}
+
+.telegram-icon {
+  display: block;
+  width: 56px;
+  aspect-ratio: 1;
+  border-radius: 14px;
+  object-fit: contain;
+}
+
+.telegram-dot {
+  display: none;
+}
+
+.social-title strong {
+  font-size: clamp(23px, 1.65vw, 32px);
+  line-height: 1;
+}
+
+.qr-card {
+  position: relative;
+  width: min(184px, 78%);
+  margin-top: 64px;
+  padding: 30px 22px 14px;
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: 0 16px 34px rgba(31, 22, 96, 0.18);
+}
+
+.qr-card::before {
+  display: none;
+}
+
+.qr-logo-badge {
+  position: absolute;
+  left: 50%;
+  top: -48px;
+  display: grid;
+  width: 74px;
+  aspect-ratio: 1;
+  place-items: center;
+  border-radius: 50%;
+  background: #6a54d4;
+  box-shadow: 0 10px 24px rgba(31, 22, 96, 0.28);
+  transform: translateX(-50%);
+}
+
+.qr-logo-badge img {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+}
+
+.qr-card > img:not(.telegram-icon) {
+  width: 100%;
+}
+
+.qr-card span {
+  margin-top: 10px;
+  color: #5b47c4;
+  font-size: clamp(14px, 0.9vw, 17px);
+}
+
+.contacts {
+  min-width: 0;
+}
+
+.contacts h2 {
+  min-height: 72px;
+  margin-bottom: 26px;
+  border-radius: 12px;
+  background: #fff;
+  color: #715bd5;
+  font-size: clamp(26px, 1.9vw, 38px);
+  letter-spacing: 0;
+}
+
+.contacts h2 span {
+  display: none;
+}
+
+.contact-grid {
+  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  gap: 26px 34px;
+  padding-right: 0;
+}
+
+.contact-grid p {
+  min-width: 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(18px, 1.1vw, 22px);
+  line-height: 1.16;
+  overflow-wrap: anywhere;
+  white-space: nowrap;
+}
+
+.contact-grid p br {
+  display: block;
+}
+
+.footer-note {
+  margin-top: 22px;
+  padding: 7px 10px;
+  border-radius: 4px;
+  background: #fff;
+  color: #68626f;
+  font-size: clamp(18px, 1.16vw, 24px);
+  line-height: 1.15;
+}
+
+@media (max-width: 1180px) {
+  .site-footer {
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 24px;
+    padding: 24px;
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    gap: 22px 36px;
+  }
+}
+
+@media (max-width: 760px) {
+  .site-footer {
+    grid-template-columns: 1fr;
+    width: calc(100vw - 24px);
+    max-width: calc(100vw - 24px);
+    padding: 18px 14px 22px;
+    border-radius: 24px 24px 0 0;
+  }
+
+  .social-title,
+  .contacts h2 {
+    min-height: 58px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .telegram-icon {
+    width: 42px;
+    border-radius: 11px;
+  }
+
+  .social-title strong,
+  .contacts h2 {
+    font-size: 19px;
+  }
+
+  .qr-card {
+    width: min(230px, 72vw);
+    margin-top: 58px;
+    padding: 30px 24px 16px;
+  }
+
+  .qr-logo-badge {
+    top: -46px;
+    width: 70px;
+  }
+
+  .qr-logo-badge img {
+    width: 64px;
+    height: 64px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .contact-grid p {
+    font-size: 16px;
+    line-height: 1.24;
+  }
+
+  .footer-note {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+  }
+}
