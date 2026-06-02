@@ -152,14 +152,11 @@ a {
   font-weight: 700;
 }
 
-.text-link::after {
-  content: "";
+.text-link img {
   display: block;
-  width: 36px;
-  height: 18px;
-  background:
-    linear-gradient(var(--purple-dark), var(--purple-dark)) left 8px / 34px 3px no-repeat,
-    linear-gradient(45deg, transparent 45%, var(--purple-dark) 46% 57%, transparent 58%) right 1px / 18px 18px no-repeat;
+  width: 44px;
+  height: auto;
+  object-fit: contain;
 }
 
 .hero-media {
@@ -1277,17 +1274,17 @@ a {
 .funds {
   width: min(1760px, calc(100% - 112px));
   margin: 0 auto 96px;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .funds-grid {
   display: grid;
-  grid-template-columns: minmax(600px, 1.15fr) minmax(360px, 0.65fr);
+  grid-template-columns: minmax(640px, 1.32fr) minmax(360px, 0.68fr);
   grid-template-areas:
     "alzrus club"
     "title logo"
     "school memory";
-  gap: 22px 24px;
+  gap: 20px 34px;
   align-items: start;
 }
 
@@ -1309,18 +1306,18 @@ a {
 }
 
 .alzrus-card {
-  min-height: 414px;
-  padding: 32px 30px 18px;
+  min-height: 330px;
+  padding: 26px 28px 18px;
   border-radius: 0 0 28px 0;
   background: var(--purple);
   color: #fff;
 }
 
 .alzrus-card p {
-  margin: 0 0 28px;
-  font-size: clamp(21px, 1.55vw, 31px);
+  margin: 0 0 22px;
+  font-size: clamp(18px, 1.25vw, 27px);
   font-weight: 500;
-  line-height: 1.16;
+  line-height: 1.12;
 }
 
 .alzrus-card .italic {
@@ -1352,9 +1349,9 @@ a {
 
 .fund-note p {
   margin: 0 0 18px;
-  font-size: clamp(15px, 1.03vw, 20px);
+  font-size: clamp(14px, 0.92vw, 18px);
   font-weight: 500;
-  line-height: 1.08;
+  line-height: 1.12;
 }
 
 .fund-note p:last-child {
@@ -1373,16 +1370,16 @@ a {
 .funds-title {
   grid-area: title;
   position: relative;
-  min-height: 255px;
+  min-height: 236px;
   display: grid;
-  grid-template-columns: 390px minmax(360px, 1fr);
+  grid-template-columns: minmax(310px, 0.62fr) minmax(360px, 1fr);
   grid-template-rows: 1fr 1fr;
   align-items: center;
 }
 
 .purple-block {
   display: block;
-  height: 112px;
+  height: 104px;
   background: var(--purple);
 }
 
@@ -1400,9 +1397,9 @@ a {
 
 .word {
   color: #000;
-  font-size: clamp(58px, 5vw, 104px);
+  font-size: clamp(58px, 4.6vw, 92px);
   font-weight: 400;
-  line-height: 0.95;
+  line-height: 0.96;
   text-transform: uppercase;
 }
 
@@ -1423,30 +1420,30 @@ a {
 .clock-logo {
   grid-area: logo;
   display: grid;
-  grid-template-columns: 280px minmax(0, 1fr);
+  grid-template-columns: 210px minmax(0, 1fr);
   align-items: center;
   justify-self: center;
-  width: min(600px, 100%);
-  min-height: 260px;
+  width: min(500px, 100%);
+  min-height: 220px;
   margin-top: 0;
 }
 
 .clock-logo img {
-  width: 330px;
+  width: 245px;
   max-width: none;
   height: auto;
-  transform: translateX(34px);
+  transform: translateX(24px);
 }
 
 .clock-logo div {
   display: grid;
   align-items: center;
-  min-height: 190px;
-  padding: 22px 20px 22px 70px;
+  min-height: 166px;
+  padding: 18px 18px 18px 58px;
   border: 2px solid #e3e0de;
   border-radius: 0 20px 20px 0;
   color: var(--purple);
-  font-size: clamp(15px, 1.05vw, 21px);
+  font-size: clamp(13px, 0.88vw, 17px);
   font-weight: 600;
   line-height: 1.12;
   text-transform: uppercase;
@@ -3544,5 +3541,50 @@ img {
     box-sizing: border-box;
     width: 100%;
     min-width: 0;
+  }
+
+  .funds-grid {
+    grid-template-columns: minmax(640px, 1.32fr) minmax(360px, 0.68fr);
+    gap: 20px 34px;
+  }
+
+  .alzrus-card {
+    min-height: 330px;
+  }
+
+  .alzrus-card p {
+    font-size: clamp(18px, 1.25vw, 27px);
+    line-height: 1.12;
+  }
+
+  .funds-title {
+    min-height: 236px;
+    grid-template-columns: minmax(310px, 0.62fr) minmax(360px, 1fr);
+  }
+
+  .purple-block {
+    height: 104px;
+  }
+
+  .word {
+    font-size: clamp(58px, 4.6vw, 92px);
+    line-height: 0.96;
+  }
+
+  .clock-logo {
+    grid-template-columns: 210px minmax(0, 1fr);
+    width: min(500px, 100%);
+    min-height: 220px;
+  }
+
+  .clock-logo img {
+    width: 245px;
+    transform: translateX(24px);
+  }
+
+  .clock-logo div {
+    min-height: 166px;
+    padding: 18px 18px 18px 58px;
+    font-size: clamp(13px, 0.88vw, 17px);
   }
 }
