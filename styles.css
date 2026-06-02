@@ -3523,3 +3523,26 @@ img {
     text-align: center;
   }
 }
+
+@media (min-width: 1181px) {
+  .forms-top {
+    grid-auto-rows: minmax(670px, auto);
+    align-items: stretch;
+  }
+
+  .forms-collage,
+  .forms-panel {
+    min-height: 670px;
+    height: 100%;
+  }
+
+  .site-footer {
+    grid-template-columns: minmax(380px, 0.3fr) minmax(0, 1fr);
+  }
+
+  .social-title {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+  }
+}
